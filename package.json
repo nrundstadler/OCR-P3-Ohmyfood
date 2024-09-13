@@ -1,0 +1,15 @@
+{
+  "name": "p3_oc_ohmyfood",
+  "version": "1.0.0",
+  "description": "Troisième projet de la formation \"développeur d'application JavaScript React\" d'OpenClassrooms.",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch ./sass/index.scss:./assets/css/style.css"
+  },
+  "keywords": [],
+  "author": "RUNDSTADLER Nicolas",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.78.0"
+  }
+}
