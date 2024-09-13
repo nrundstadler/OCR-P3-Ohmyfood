@@ -1,0 +1,13 @@
+@use "../utils/variables" as *;
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 14px 0 5px 0;
+  background-color: $bg-color-white;
+
+  &__logo {
+    width: 162px;
+    height: auto;
+  }
+}

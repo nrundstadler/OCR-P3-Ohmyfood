@@ -1,0 +1,7 @@
+@use "../utils/variables" as *;
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $text-color;
+  font-weight: 300;
+}
