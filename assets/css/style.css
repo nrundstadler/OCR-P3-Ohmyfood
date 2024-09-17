@@ -19,12 +19,6 @@ body {
   font-weight: 300;
 }
 
-.shrikhand-regular {
-  font-family: "Shrikhand", serif;
-  color: #000;
-  font-weight: 400;
-}
-
 .header {
   display: flex;
   justify-content: center;
