@@ -1,16 +1,30 @@
-$primary-color: #9356dc;
-$secondary-color: #ff79da;
-$tertiary-color: #99e2d0;
+// ********* Colors *********
 
-$bg-color: #eaeaea;
-$bg-color-light: #f6f6f6;
-$bg-color-dark: #353535;
-$bg-color-white: #fff;
+$purple: #9356dc;
+$pink: #ff79da;
+$pastel-green: #99e2d0;
 
-$text-color: #000;
-$text-color-light: #353535;
-$text-color-white: #fff;
+$white: #fff;
+$off-white: #f6f6f6;
+$light-gray: #eaeaea;
+$medium-gray: #7e7e7e;
+$dark-gray: #353535;
+$near-black: #101010;
+$black: #000;
 
-$icone-color: #101010;
-$icone-color-tuto: #7e7e7e;
-$icone-color-tuto-hover: $primary-color;
+$color-primary: $purple;
+$color-secondary: $pink;
+$color-tertiary: $pastel-green;
+
+$bg-color: $light-gray;
+$bg-color-light: $off-white;
+$bg-color-dark: $dark-gray;
+$bg-color-white: $white;
+
+$text-color: $black;
+$text-color-light: $dark-gray;
+$text-color-white: $white;
+
+$icone-color: $near-black;
+$icone-color-tuto: $medium-gray;
+$icone-color-tuto-hover: $color-primary;

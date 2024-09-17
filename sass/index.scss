@@ -1,5 +1,4 @@
-@forward "./base/reset";
-@forward "./utils/variables";
-@forward "./base/typography";
-@forward "./base/fonts";
-@forward "./layout/header";
+@use "./base/reset";
+@use "./base/typography";
+@use "./base/fonts";
+@use "./layout/header";
