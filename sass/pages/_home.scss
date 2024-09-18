@@ -1,0 +1,89 @@
+@use "../utils/variables" as *;
+@use "../utils/placeholders-typo" as *;
+
+.local {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 20px;
+  background-color: $bg-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+
+  &__icon {
+    margin-right: 1rem;
+  }
+
+  &__text {
+    font-weight: 400;
+  }
+}
+
+.hero {
+  background-color: $bg-color-light;
+  padding: 34px 20px 54px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 0.75rem;
+  }
+
+  &__text {
+    font-size: 1.125rem;
+    margin-bottom: 1.85rem;
+    font-weight: 100;
+  }
+}
+
+.tuto {
+  padding: 48px 20px 64px;
+
+  &__steps {
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__step {
+    display: flex;
+    background-color: $bg-color-light;
+    padding: 28px 35px;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: $main-shadow;
+
+    @supports (counter-increment: tuto) and (content: counter(tuto)) {
+      margin-left: 8px;
+      counter-increment: tuto;
+
+      &::before {
+        content: counter(tuto);
+        position: absolute;
+        font-size: 0.88rem;
+        left: 17px;
+        width: 1.5rem;
+        height: 1.5rem;
+        line-height: 1.65rem;
+        border-radius: 0.75rem;
+        background-color: $color-primary;
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: 22px;
+    font-size: 1.2rem;
+    color: $icone-color-tuto;
+  }
+
+  &__icon--colored {
+    color: $icone-color-tuto-colored;
+  }
+}
+
+.restaurants {
+  padding: 48px 20px 64px;
+  background-color: $bg-color-light;
+}

@@ -1,4 +1,7 @@
+@use "./base/index";
 @use "./base/reset";
-@use "./base/typography";
-@use "./base/fonts";
 @use "./layout/header";
+@use "./layout/footer";
+@use "./pages/home";
+@use "./components/buttons";
+@use "./components/cards";

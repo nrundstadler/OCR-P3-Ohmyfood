@@ -1,0 +1,22 @@
+@use "../utils/variables" as *;
+@use "../utils/placeholders-typo" as *;
+
+body {
+  @extend %typography-body;
+  color: $text-color;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+a {
+  color: $text-color;
+}

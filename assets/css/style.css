@@ -1,33 +1,224 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.footer__logo {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+}
+
+body {
+  color: #000;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+a {
+  color: #000;
+}
+
 *::before,
 *,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a {
   text-decoration: none;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: #000;
-  font-weight: 300;
 }
 
 .header {
   display: flex;
   justify-content: center;
-  padding: 14px 0 5px 0;
+  padding: 22px 0 13px 0;
   background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 10;
 }
 .header__logo {
   width: 162px;
   height: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 24px;
+  background-color: #353535;
+  color: #fff;
+}
+.footer a {
+  color: white;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer__logo {
+  font-size: 1.125rem;
+  margin-bottom: 0.6rem;
+}
+.footer__nav-item {
+  margin-top: 0.4rem;
+  font-weight: 400;
+}
+.footer__nav-item--partnership {
+  font-weight: 500;
+}
+.footer__nav-icon {
+  width: 1.5rem;
+}
+
+.local {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 20px;
+  background-color: #eaeaea;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+.local__icon {
+  margin-right: 1rem;
+}
+.local__text {
+  font-weight: 400;
+}
+
+.hero {
+  background-color: #f6f6f6;
+  padding: 34px 20px 54px;
+  text-align: center;
+}
+.hero__title {
+  margin-bottom: 0.75rem;
+}
+.hero__text {
+  font-size: 1.125rem;
+  margin-bottom: 1.85rem;
+  font-weight: 100;
+}
+
+.tuto {
+  padding: 48px 20px 64px;
+}
+.tuto__steps {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.tuto__step {
+  display: flex;
+  background-color: #f6f6f6;
+  padding: 28px 35px;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+@supports (counter-increment: tuto) and (content: counter(tuto)) {
+  .tuto__step {
+    margin-left: 8px;
+    counter-increment: tuto;
+  }
+  .tuto__step::before {
+    content: counter(tuto);
+    position: absolute;
+    font-size: 0.88rem;
+    left: 17px;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.65rem;
+    border-radius: 0.75rem;
+    background-color: #9356dc;
+    color: white;
+    text-align: center;
+  }
+}
+.tuto__icon {
+  margin-right: 22px;
+  font-size: 1.2rem;
+  color: #7e7e7e;
+}
+.tuto__icon--colored {
+  color: #9356dc;
+}
+
+.restaurants {
+  padding: 48px 20px 64px;
+  background-color: #f6f6f6;
+}
+
+.button {
+  display: inline-block;
+  min-width: 186px;
+  padding: 15px 20px;
+  border-radius: 30px;
+  background: linear-gradient(#ff79da, #9356dc);
+  font-weight: 400;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-container {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+}
+.card__img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 174px;
+  object-fit: cover;
+}
+.card__badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+  background-color: #99e2d0;
+  color: #008766;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.4rem 0.7rem;
+  border-radius: 2px;
+}
+.card__body {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 13px;
+}
+.card__info-title {
+  padding-bottom: 0.25rem;
+}
+.card__info-city {
+  font-size: 1.06rem;
+}
+.card__icon {
+  font-size: 1.56rem;
+  padding: 0.15rem 8px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

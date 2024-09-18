@@ -3,6 +3,7 @@
 $purple: #9356dc;
 $pink: #ff79da;
 $pastel-green: #99e2d0;
+$green: #008766;
 
 $white: #fff;
 $off-white: #f6f6f6;
@@ -27,4 +28,11 @@ $text-color-white: $white;
 
 $icone-color: $near-black;
 $icone-color-tuto: $medium-gray;
-$icone-color-tuto-hover: $color-primary;
+$icone-color-tuto-colored: $color-primary;
+
+$badge-card-color: $green;
+$badge-card-bg-color: $pastel-green;
+
+// ********* Shadows *********
+$btn-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+$main-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
