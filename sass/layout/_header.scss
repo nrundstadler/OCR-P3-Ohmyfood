@@ -1,8 +1,8 @@
 @use "../utils/variables" as *;
+@use "../utils/_mixins.scss" as *;
 
 .header {
-  display: flex;
-  justify-content: center;
+  @include justify-center;
   padding: 22px 0 13px 0;
   background-color: $bg-color-white;
 
