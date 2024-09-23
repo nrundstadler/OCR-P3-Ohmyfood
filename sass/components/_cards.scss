@@ -39,7 +39,8 @@
   &__body {
     display: flex;
     justify-content: space-between;
-    margin: 12px 13px;
+    align-items: flex-start;
+    padding: 12px 13px;
   }
 
   &__info-title {
@@ -48,10 +49,5 @@
 
   &__info-city {
     font-size: 1.06rem;
-  }
-
-  &__icon {
-    font-size: 1.56rem;
-    padding: 0.15rem 8px 0 0;
   }
 }
