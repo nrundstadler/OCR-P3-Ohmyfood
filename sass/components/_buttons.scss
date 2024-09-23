@@ -9,4 +9,9 @@
   font-weight: 400;
   color: $white;
   box-shadow: $btn-shadow;
+
+  &:hover {
+    opacity: 0.88;
+    box-shadow: $btn-shadow-hover;
+  }
 }
