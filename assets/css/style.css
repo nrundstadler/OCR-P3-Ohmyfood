@@ -263,7 +263,7 @@ ol {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  animation: loading-appear 0.1s forwards;
+  animation: loading-appear 4s forwards;
 }
 .loader__wrapper {
   position: relative;

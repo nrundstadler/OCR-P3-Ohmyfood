@@ -9,8 +9,7 @@
   justify-content: center;
   align-items: center;
   background-color: $bg-color-white;
-  //animation: loading-appear 4s forwards;
-  animation: loading-appear 0.1s forwards;
+  animation: loading-appear 4s forwards;
 
   &__wrapper {
     position: relative;
