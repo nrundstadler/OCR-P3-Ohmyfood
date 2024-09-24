@@ -1,12 +1,26 @@
 @use "../utils/variables" as *;
 @use "../utils/placeholders-typo" as *;
+@use "../utils/_breakpoints.scss" as *;
 
 .footer {
   display: flex;
   flex-direction: column;
+  gap: 0.4rem;
   padding: 22px 24px;
   background-color: $bg-color-dark;
   color: $text-color-white;
+
+  @include tablet {
+    align-items: center;
+    text-align: center;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 4%;
+    padding: 60px 4% 26px;
+  }
 
   a {
     color: white;
@@ -20,10 +34,26 @@
     @extend %typography-logo;
     font-size: 1.125rem;
     margin-bottom: 0.6rem;
+
+    @include desktop {
+      order: 1;
+      margin: 0;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 1.5rem;
+    }
   }
 
   &__nav-item {
-    margin-top: 0.4rem;
     font-weight: 400;
 
     &--partnership {

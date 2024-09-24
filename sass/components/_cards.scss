@@ -1,16 +1,27 @@
 @use "../utils/variables" as *;
+@use "../utils/_breakpoints.scss" as *;
 
 .card-container {
   margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 18px;
+
+  @include desktop {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 52px;
+  }
 }
 
 .card {
   border-radius: 10px;
   background-color: $bg-color-white;
   position: relative;
+
+  @include desktop {
+    width: 46%;
+  }
 
   &:hover {
     transform: scale(1.01);

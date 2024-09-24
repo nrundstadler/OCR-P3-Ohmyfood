@@ -1,6 +1,7 @@
 @use "../utils/variables" as *;
 @use "../utils/placeholders-typo" as *;
 @use "../utils/_mixins.scss" as *;
+@use "../utils/_breakpoints.scss" as *;
 
 .local {
   @include justify-center;
@@ -8,6 +9,10 @@
   background-color: $bg-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: relative;
+
+  @include desktop {
+    box-shadow: none;
+  }
 
   &__icon {
     margin-right: 1rem;
@@ -25,33 +30,58 @@
 
   &__title {
     margin-bottom: 0.75rem;
+
+    @include desktop {
+      font-size: 2.5rem;
+      margin-bottom: 1.87rem;
+    }
   }
 
   &__text {
     font-size: 1.125rem;
     margin-bottom: 1.85rem;
     font-weight: 100;
+
+    @include desktop {
+      font-weight: 300;
+      font-size: 1.12rem;
+      margin-bottom: 1.87rem;
+    }
   }
 }
 
 .tuto {
   padding: 48px 20px 64px;
 
+  @include tablet {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 48px 20px 46px;
+  }
+  @include desktop {
+    max-width: 1080px;
+  }
+
   &__steps {
     margin-top: 1.6rem;
     display: flex;
     flex-direction: column;
     gap: 25px;
+
+    @include desktop {
+      flex-direction: row;
+    }
   }
 
   &__step {
+    position: relative;
     display: flex;
     background-color: $bg-color-light;
     padding: 28px 35px;
     border-radius: 20px;
     font-weight: 500;
     box-shadow: $main-shadow;
-
+    width: 100%;
     @supports (counter-increment: tuto) and (content: counter(tuto)) {
       margin-left: 8px;
       counter-increment: tuto;
@@ -60,7 +90,7 @@
         content: counter(tuto);
         position: absolute;
         font-size: 0.88rem;
-        left: 17px;
+        left: -0.75rem;
         width: 1.5rem;
         height: 1.5rem;
         line-height: 1.65rem;
@@ -70,6 +100,10 @@
         text-align: center;
       }
     }
+
+    &:hover > .tuto__icon {
+      color: $icon-color-tuto-colored;
+    }
   }
 
   &__icon {
@@ -77,13 +111,19 @@
     font-size: 1.2rem;
     color: $icon-color-tuto;
   }
-
-  &__icon--colored {
-    color: $icon-color-tuto-colored;
-  }
 }
 
 .restaurants {
   padding: 48px 20px 64px;
   background-color: $bg-color-light;
+
+  .restaurants_container {
+    @include tablet {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    @include desktop {
+      max-width: 1080px;
+    }
+  }
 }

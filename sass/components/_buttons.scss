@@ -20,16 +20,13 @@
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 1.56rem;
   width: 1.7rem;
-
   -webkit-text-stroke: 1px white;
   text-align: center;
 
   &::after {
     position: absolute;
-    right: 0;
     width: 100%;
     font-family: "Font Awesome 5 Free";
     content: "\f004";

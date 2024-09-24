@@ -1,17 +1,26 @@
 @use "../utils/variables" as *;
 @use "../utils/_mixins.scss" as *;
+@use "../utils/_breakpoints.scss" as *;
 
 .header {
   @include justify-center;
-  padding: 22px 0 13px 0;
   background-color: $bg-color-white;
-
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   position: relative;
   z-index: 30;
 
+  @include desktop {
+    box-shadow: none;
+  }
+
   &__logo {
     width: 162px;
     height: auto;
+    padding: 22px 0 13px 0;
+
+    @include desktop {
+      width: 200px;
+      padding: 31px 0;
+    }
   }
 }
