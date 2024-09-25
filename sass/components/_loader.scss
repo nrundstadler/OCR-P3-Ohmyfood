@@ -1,5 +1,5 @@
 @use "../utils/variables" as *;
-@use "../utils/placeholders-typo" as *;
+@use "../utils/placeholders" as *;
 
 .loader {
   position: fixed;
@@ -120,22 +120,23 @@
       }
     }
 
-    &-draw--yellow {
+    &-draw-yellow,
+    &-draw-red {
       position: absolute;
-      width: 8px;
-      height: 8px;
       transform: scaleX(0.8) rotate(45deg);
       border-radius: 0 40% 100% 40%;
+    }
+
+    &-draw-yellow {
+      width: 8px;
+      height: 8px;
       background-color: #e8f676;
       bottom: 0;
     }
 
-    &-draw--red {
-      position: absolute;
+    &-draw-red {
       width: 14px;
       height: 14px;
-      transform: scaleX(0.8) rotate(45deg);
-      border-radius: 0 40% 100% 40%;
       background-color: #d14f1d;
       bottom: 1px;
       z-index: -1;

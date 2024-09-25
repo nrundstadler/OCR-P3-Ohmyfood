@@ -1,5 +1,4 @@
 // ********* Typography *********
-
 %typography-body {
   font-family: "Roboto", sans-serif;
 }
@@ -7,4 +6,10 @@
 %typography-logo {
   font-family: "Shrikhand", serif;
   font-weight: 400;
+}
+
+// ********* Positioning  *********
+%justify-center {
+  display: flex;
+  justify-content: center;
 }

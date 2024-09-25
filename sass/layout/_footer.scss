@@ -1,6 +1,6 @@
 @use "../utils/variables" as *;
-@use "../utils/placeholders-typo" as *;
-@use "../utils/_breakpoints.scss" as *;
+@use "../utils/placeholders" as *;
+@use "../utils/breakpoints" as *;
 
 .footer {
   display: flex;

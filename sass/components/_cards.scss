@@ -1,5 +1,5 @@
 @use "../utils/variables" as *;
-@use "../utils/_breakpoints.scss" as *;
+@use "../utils/breakpoints" as *;
 
 .card-container {
   margin-top: 1.5rem;

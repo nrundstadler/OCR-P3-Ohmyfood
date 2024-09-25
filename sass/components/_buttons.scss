@@ -8,6 +8,7 @@
   background: linear-gradient($color-secondary, $color-primary);
   font-weight: 400;
   color: $white;
+  text-align: center;
   box-shadow: $btn-shadow;
 
   &:hover {
@@ -36,6 +37,7 @@
     background-clip: text;
     -webkit-text-stroke: 1px transparent;
     transform: scale(0);
+    cursor: pointer;
   }
 
   &:hover::after {

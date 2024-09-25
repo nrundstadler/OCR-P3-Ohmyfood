@@ -1,5 +1,5 @@
 @use "../utils/variables" as *;
-@use "../utils/placeholders-typo" as *;
+@use "../utils/placeholders" as *;
 
 body {
   @extend %typography-body;
